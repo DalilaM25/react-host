@@ -1,0 +1,10 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="stripe-mask">
+      <rect x="0" y="0" width="24" height="24" fill="white"/>
+      <rect x="0" y="10" width="24" height="4" fill="black"/>
+    </mask>
+  </defs>
+  <rect x="0" y="0" width="24" height="12" fill="#b0a1fc" mask="url(#stripe-mask)"/>
+  <rect x="0" y="12" width="24" height="12" fill="#aeff36" mask="url(#stripe-mask)"/>
+</svg>

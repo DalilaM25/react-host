@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('./Oswald/static/Oswald-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('./Inter/static/Inter_24pt-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Oswald-Light';
+    src: url('./Oswald/static/Oswald-Light.ttf') format('truetype');
+}

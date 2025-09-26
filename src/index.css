@@ -1,4 +1,42 @@
-:root {
+@import '/fonts/fonts.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@layer base {
+  /* Дополнительные сбросы поверх Tailwind */
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: rgba(168, 168, 168, 0.158);
+    font-feature-settings: 'kern';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Убираем стандартные стили для кнопок */
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  /* Убираем стрелки у input[type="number"] */
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
 }
-
