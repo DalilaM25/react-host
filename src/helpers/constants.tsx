@@ -1,4 +1,4 @@
-import mail from '../assets/svg/mail.svg';
+import mail from '@/assets/svg/mail.svg';
 import phone from '../assets/svg/phone.svg';
 import telegram from '../assets/svg/telegram.svg';
 import dashboard from '../assets/svg/dashboard.svg';
