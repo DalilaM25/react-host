@@ -1,4 +1,4 @@
-import { footerContacts } from '../helpers/constants';
+import { FOOTER_CONTACTS } from '../helpers/constants';
 import { spanStyles } from '../helpers/style-constants';
 
 export const Footer = () => {
@@ -16,7 +16,7 @@ export const Footer = () => {
         <span className={spanStyles}>Автор: Михайлова Дарья</span>
       </div>
       <div className="flex flex-col gap-1">
-        {footerContacts.map((contact) => (
+        {FOOTER_CONTACTS.map((contact) => (
           <a
             className="flex items-center gap-2"
             key={contact.name}

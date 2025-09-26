@@ -1,9 +1,14 @@
-import { AppWrapper } from './AppWrapper';
+import { AppWrapper } from './AppWrapper.jsx';
 import { Header } from './components/Header.tsx';
 import { Sidebar } from './components/Sidebar.tsx';
 import { Footer } from './components/Footer.tsx';
 import { Home } from './components/Home.tsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+export const ROUTES = {
+  HOME: '/',
+  DASHBOARD: '/dashboard/*',
+} as const;
 
 function App() {
   return (
@@ -12,16 +17,15 @@ function App() {
         <Sidebar />
         <div className="flex flex-1 flex-col">
           <Header />
-
-          <div className="flex flex-1">
+          <main className="flex flex-1">
             <Routes>
-              <Route path="/" element={<Home mfName="home" />} />
+              <Route path={ROUTES.HOME} element={<Home />} />
               <Route
-                path="/dashboard/*"
+                path={ROUTES.DASHBOARD}
                 element={<AppWrapper mfName="dashboard" />}
               />
             </Routes>
-          </div>
+          </main>
           <Footer />
         </div>
       </div>

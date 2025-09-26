@@ -1,6 +1,6 @@
-import {useRef, useEffect} from 'react'
-import App from 'vue_remote/App'
-import {createApp} from 'vue'
+import { useRef, useEffect } from 'react';
+import App from 'vue_remote/App';
+import { createApp } from 'vue';
 
 export const AppWrapper = ({ mfName }) => {
   const containerRef = useRef();
@@ -12,6 +12,6 @@ export const AppWrapper = ({ mfName }) => {
     return () => {
       vueApp.unmount();
     };
-  });
+  }, []);
   return <div ref={containerRef} id={`mf-${mfName}`}></div>;
 };

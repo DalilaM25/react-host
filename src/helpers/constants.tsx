@@ -5,7 +5,7 @@ import dashboard from '../assets/svg/dashboard.svg';
 import autor from '../assets/svg/autor.svg';
 import { spanStyles } from './style-constants';
 
-export const footerContacts = [
+export const FOOTER_CONTACTS = [
   {
     name: 'mail',
     icon: mail,
@@ -29,7 +29,7 @@ export const footerContacts = [
   },
 ];
 
-export const SidebarButtons = [
+export const SIDEBAR_BUTTONS = [
   { name: 'dashboard', text: 'Дашборд', icon: dashboard, path: '/dashboard' },
   { name: 'something1', text: 'хз что', icon: dashboard, path: '/hz' },
   { name: 'something2', text: 'от автора', icon: autor, path: '/autor' },
