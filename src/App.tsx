@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 export const ROUTES = {
   HOME: '/',
-  DASHBOARD: '/dashboard/*',
+  CANBAN: '/canban/*',
 } as const;
 
 function App() {
@@ -21,8 +21,8 @@ function App() {
             <Routes>
               <Route path={ROUTES.HOME} element={<Home />} />
               <Route
-                path={ROUTES.DASHBOARD}
-                element={<AppWrapper mfName="dashboard" />}
+                path={ROUTES.CANBAN}
+                element={<AppWrapper mfName="canban" />}
               />
             </Routes>
           </main>

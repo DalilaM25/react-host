@@ -1,4 +1,4 @@
-import mail from '@/assets/svg/mail.svg';
+import mail from '../assets/svg/mail.svg';
 import phone from '../assets/svg/phone.svg';
 import telegram from '../assets/svg/telegram.svg';
 import dashboard from '../assets/svg/dashboard.svg';
@@ -30,7 +30,7 @@ export const FOOTER_CONTACTS = [
 ];
 
 export const SIDEBAR_BUTTONS = [
-  { name: 'dashboard', text: 'Дашборд', icon: dashboard, path: '/dashboard' },
+  { name: 'dashboard', text: 'Канбан', icon: dashboard, path: '/canban' },
   { name: 'something1', text: 'хз что', icon: dashboard, path: '/hz' },
   { name: 'something2', text: 'от автора', icon: autor, path: '/autor' },
 ];
